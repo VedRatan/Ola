@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginandSignup.Login"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="ExtraText">
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/loginbackground" />
+            />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/olalogo"
+            android:layout_marginStart="20dp"
+            />
+
+        <Button
+            android:id="@+id/phonelogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/background"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/custombutton"
+            android:text="Continue with Phone Number"
+            android:textColor="@color/white" />
+
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phonelogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/googlelogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phonelogin"
+                android:layout_margin="15dp"
+                android:background="@color/white"
+                android:drawablePadding="7dp"
+                android:src="@drawable/google" />
+
+            <ImageButton
+                android:id="@+id/emaillogin"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phonelogin"
+                android:layout_margin="15dp"
+                android:layout_toRightOf="@+id/googlelogin"
+                android:background="@color/white"
+                android:drawablePadding="7dp"
+                android:paddingTop="3dp"
+                android:src="@drawable/mail" />
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

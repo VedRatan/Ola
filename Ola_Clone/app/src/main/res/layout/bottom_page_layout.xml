@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bottom_sheet"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_bottom_sheet"
+    android:orientation="vertical">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+
+       <LinearLayout
+           android:id="@+id/regular"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <ImageView
+               android:layout_margin="10dp"
+               android:layout_width="60dp"
+               android:layout_height="60dp"
+               android:src="@drawable/regular"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Daily"
+               android:textColor="@color/black"
+               android:textAlignment="center"
+               android:layout_marginLeft="25dp"
+               android:textStyle="bold"
+               android:fontFamily="@font/akaya_telivigala"
+               />
+           <View
+               android:id="@+id/regularhighlight"
+               android:visibility="gone"
+               android:layout_width="50dp"
+               android:layout_height="2dp"
+               android:background="@color/black"
+               android:layout_marginLeft="18dp"
+               />
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/premium"
+           android:orientation="vertical">
+
+           <ImageView
+               android:layout_margin="10dp"
+               android:layout_width="60dp"
+               android:layout_height="60dp"
+               android:src="@drawable/premium"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Premium"
+               android:textColor="@color/black"
+               android:textAlignment="center"
+               android:layout_marginLeft="20dp"
+               android:textStyle="bold"
+               android:fontFamily="@font/akaya_telivigala"
+               />
+           <View
+               android:id="@+id/premiumhighlight"
+               android:layout_width="50dp"
+               android:layout_height="2dp"
+               android:background="@color/black"
+               android:visibility="gone"
+               android:layout_marginLeft="20dp"
+               />
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+
+    <fragment
+        android:layout_marginTop="20dp"
+        android:id="@+id/autocomplete_fragment"
+        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/driverInfo"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/driverProfileImg"
+
+                android:layout_marginLeft="10dp"
+
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/profile"
+                android:layout_gravity="center"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:id="@+id/driverName"
+                    android:layout_width="wrap_content"
+                    android:text="skfskjf"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5sp"
+                    />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:text="sfsdfsafsfasfsaf"
+                    android:id="@+id/driverPhone"
+                    android:paddingTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10sp"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book Ola Cab"
+        android:background="#D6DF22"
+        android:layout_gravity="bottom"
+        />
+</LinearLayout>
+</ScrollView>
+
+

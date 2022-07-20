@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    app:cardMaxElevation="12dp"
+    android:layout_margin="10dp"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:padding="15dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/rideidheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ride Id: "
+            android:textColor="@color/black"
+
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/amaranth"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/rideidheading"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/amaranth"
+        android:textColor="@color/black"
+        android:id="@+id/rideId"
+        android:text="rideId"
+        android:textSize="15sp"
+        />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/timeheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rideidheading"
+            android:text="Time: "
+            android:textColor="@color/black"
+
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/amaranth"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rideId"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/black"
+
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/timeheading"
+
+            android:fontFamily="@font/amaranth"
+            android:text="time"
+            android:textSize="15sp" />
+
+
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginandSignup.PhoneLogin">
+
+    <ImageView
+        android:id="@+id/phoneLoginImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/mobilelogin"
+        />
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="300dp"
+        android:imeOptions="actionDone"
+        android:inputType="phone"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneLoginImage"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/phone"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:drawablePadding="6dp"
+        android:importantForAutofill="no"
+        android:hint="Enter your phone number"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custombutton"
+        android:padding="10dp"
+        android:text="Send Verfication Code"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
+</ScrollView>

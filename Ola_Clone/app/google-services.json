@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "309228950538",
+    "firebase_url": "https://ola-clone-44e16-default-rtdb.firebaseio.com",
+    "project_id": "ola-clone-44e16",
+    "storage_bucket": "ola-clone-44e16.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309228950538:android:dd911e7ea89908190fbbf3",
+        "android_client_info": {
+          "package_name": "com.example.android.ola_clone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309228950538-qu4q1489l3e3vhcoong18vsva3ij00gn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.ola_clone",
+            "certificate_hash": "63d7c039b1a34232482744c0a5194436fac9c4dd"
+          }
+        },
+        {
+          "client_id": "309228950538-2nc8nhvrmtfqjlq9391aprrod5k2sh9s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAd4gjWi6iDJT30QVMhgv7frqrvBqcwgs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "309228950538-2nc8nhvrmtfqjlq9391aprrod5k2sh9s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
